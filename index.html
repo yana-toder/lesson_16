@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">header</header>
+		<main class="page">
+			<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+				<div class="form__title">Заповніть форму</div>
+				<div class="form__line">
+					<label class="form__label" for="name-01">Введіть ваше ім'я</label>
+					<input placeholder="Введіть ваше ім'я" required class="form__input" type="text" id="name-01" name="name">
+				</div>
+				<div class="form__line">
+					<label class="form__label" for="age-01">Введіть ваш вік</label>
+					<input placeholder="Введіть ваш вік" required class="form__input" type="text" id="age-01" name="age">
+				</div>
+				<div class="form__line">
+					<label class="form__label" for="password-01">Введіть ваш пароль</label>
+					<input placeholder="Введіть ваш пароль" required class="form__input" type="password" id="password-01" name="password">
+				</div>
+				<div class="form__line">
+					<label class="form__label" for="phone-01">Введіть ваш телефон</label>
+					<input placeholder="Введіть ваш телефон" required class="form__input" type="tel" id="phone-01" name="phone">
+				</div>
+				<div class="form__line">
+					<label class="form__label" for="email-01">Введіть ваш email</label>
+					<input placeholder="Введіть ваш email" required class="form__input" type="email" id="email-01" name="email">
+				</div>
+				<div class="form__line">
+					<input required class="form__input" type="date" name="date">
+				</div>
+				<div class="form__line">
+					<input type="file" class="form__file">
+				</div>
+				<div class="form__checkbox">
+					<input class="form__checkbox--input" type="checkbox" checked id="namecheckbox_01" value="Samsung" name="namecheckbox_1">
+					<label class="form__checkbox--label" for="namecheckbox_01"> <span class="form__checkbox--text">Samsung</span></label> 
+				</div>
+				<div class="form__checkbox">
+					<input class="form__checkbox--input" type="checkbox" id="namecheckbox_02" value="Iphone" name="namecheckbox_2">
+					<label class="form__checkbox--label" for="namecheckbox_02"> <span class="form__checkbox--text">Iphone</span></label>
+				</div>
+				<div class="form__line">
+					<select name="side" id="">
+						<option value="black">чорний</option>
+						<option value="white">білий</option>
+						<option value="pink">рожевий</option>
+						<option value="metal">металік</option>
+					</select>
+				</div>
+				<div class="form__radio">
+					<div class="form__radiobuttons radiobuttons-form">
+						<div class="radiobuttons-form__item">
+							<input class="radiobuttons-form__input" type="radio" value="1" id="nameradio-01" name="nameradio">
+							<label class="radiobuttons-form__label" for="nameradio-01"><span class="radiobuttons-form__text"></span> новий</label>
+						</div>
+						<div class="radiobuttons-form__item">
+							<input class="radiobuttons-form__input" type="radio" value="2" id="nameradio-02" name="nameradio">
+							<label class="radiobuttons-form__label" for="nameradio-02"><span class="radiobuttons-form__text">вживаний</span></label>
+						</div>
+						<div class="radiobuttons-form__item">
+							<input class="radiobuttons-form__input" checked type="radio" value="3" id="nameradio-03" name="nameradio">
+							<label class="radiobuttons-form__label" for="nameradio-03"> <span class="radiobuttons-form__text">нічо не хочу</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form__massage">
+					<textarea class="form__area" name="massage" id=""></textarea>
+				</div>
+				<button class="form__button" type="submit">Відправити форму</button>
+			</form>
+			<section class="send">
+				<div class="send__container">
+					<div class="send__wrap">
+						<div class="send__image">
+							<img src="img/illustration.svg" alt="illustration">
+						</div>
+						<div class="send__contant">
+							<span class="send__subtitle">Any questions?</span>
+							<h2 class="send__title">Drop us a line</h2>
+							<form action="#" class="send__form form-send">
+								<div class="form-send__box">
+									<div class="form-send__line">
+										<label for="first-send" class="form-send__label">First Name*</label>
+										<input type="text" required placeholder="Your first name" class="form-send__input" name="first-send" id="first-send">
+									</div>
+									<div class="form-send__line">
+										<label for="last-send" class="form-send__label">Last  Name*</label>
+										<input type="text" required placeholder="Your last name" class="form-send__input" name="last-send" id="last-send">
+									</div>
+									<div class="form-send__line">
+										<label for="email-send" class="form-send__label">Email*</label>
+										<input type="email" required placeholder="Your working email" class="form-send__input" name="email-send" id="email-send">
+									</div>
+									<div class="form-send__line">
+										<label for="phone-send" class="form-send__label">Phone</label>
+										<input type="tel" placeholder="Your phone number" class="form-send__input" name="phone-send" id="phone-send">
+									</div>
+									<div class="form-send__massage">
+										<label for="name-send" class="form-send__label">Message*</label>
+										<textarea type="text" required placeholder="Your message" class="form-send__massage" name="send-massage"></textarea>
+									</div>
+								</div>
+								<div class="form-send__checkbox-wrap">
+									<div class="form-send__checkbox">
+										<input class="form-send__checkbox--input" type="checkbox" checked id="checkbox_send" value="agree" name="agree">
+										<label class="form-send__checkbox--label" for="checkbox_send"> 
+											<span class="form-send__checkbox--text">
+												I agree to receive communications from Createx Online School
+											</span>
+										</label> 
+									</div>
+									<button class="form-send__button button"><span>Send message</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
